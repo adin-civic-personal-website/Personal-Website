@@ -18,6 +18,18 @@ a {
     align-items: center;
     justify-content: center;
 }
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.section-title span {
+    color: aqua;
+}
 /* Hero Section */
 #hero {
     background-image: url(images/pexels-adrien-olichon-2387793.jpg);
@@ -46,9 +58,9 @@ a {
 #hero .cta {
     display: inline-block;
     padding: 10px 30px;
-    color: rgb(13, 219, 143);
+    color: rgb(0, 210, 221);
     background-color: transparent;
-    border: 2px solid rgb(13, 219, 143);
+    border: 2px solid rgb(0, 210, 221);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -58,6 +70,73 @@ a {
 }
 #hero .cta:hover {
     color: white;
-    background-color: rgb(13, 219, 143);
+    background-color: rgb(0, 194, 204);
 }
 /* End Hero Section */
+
+/* Projects Section */
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .projects-header h1 {
+    margin-bottom: 50px;
+}
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .projects-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info {
+    padding:30px;
+    flex-basis: 50%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+#projects .projects-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+#projects .projects-info h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#projects .projects-info p {
+    color: white;
+}
+#projects .project-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .project-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+/* End Projects Section */
